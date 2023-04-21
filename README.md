@@ -1,9 +1,6 @@
-# FIFA-World-Cup-Project
-FIFA World Cup - Project
 FIFA World Cup Project Documentation
 
 
-DOCUMENTATION
 
 Introduction
 
