@@ -41,7 +41,7 @@ GROUP BY Winner
 ORDER BY TotalGoalsScored DESC;
 
 
---6. Find total number of goals scored by each country participating at the World Cup during 1990 and 2014!
+--6. Find total number of goals scored by country at the World Cup during 1990 and 2014!
 
 Answer: 
 
@@ -55,11 +55,8 @@ ORDER BY SUM(GoalsScored) DESC;
 
 Answer:
 
-SELECT Country, SUM(GoalsScored) AS GoalsSum
-FROM [FIFA World Cup - Sheet1]
-WHERE Year = 2014
-GROUP BY Country
-ORDER BY SUM(GoalsScored) DESC;
+SELECT SUM(Goalsscored) AS TotalGoalsScored2014 FROM [FIFA World Cup - Sheet1]
+WHERE Year = 2014;
 
 --8. Find the max goals scored in 2014
 
@@ -71,7 +68,7 @@ WHERE Year = 2014
 GROUP BY Country
 ORDER BY MAX(GoalsScored) DESC;
 
---9. Find the max goals scored according to the given data?
+--9. Find the max goals scored according to country with given data?
 
 SELECT Country, MAX(GoalsScored) AS GoalsMax
 FROM [FIFA World Cup - Sheet1]
